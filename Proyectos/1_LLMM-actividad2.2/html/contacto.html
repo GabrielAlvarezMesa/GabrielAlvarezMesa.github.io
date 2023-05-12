@@ -1,0 +1,64 @@
+<!-- Página con un formulario de contacto -->
+<!-- h1 -->
+<!-- p -->
+<!-- Enlaces a index, ingredientes, pasos y contacto -->
+<!-- formulario: nombre, email, seleccionar entre 
+    consulta/sugerencia/corrección, comentario, aceptar política de
+     privacidad, enviar-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos</title>
+    <style>
+        body {
+            background-image: url(../img/fondo_tacos.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .buttonClass {
+            background-color: rgba(195, 17, 17, 0.489);
+            color: rgb(30, 110, 99);
+        }
+    </style>
+</head>
+
+<body>
+    <a href="../html/index.html" class="buttonClass">Página principal</a>
+    <a href="../html/ingredientes.html" class="buttonClass">Ingredientes</a>
+    <a href="../html/pasos.html" class="buttonClass">Pasos</a>
+    <a href="../html/contacto.html" class="buttonClass">Contacto</a>
+    <h1>Tacos de camarón estilo Ensenada</h1>
+    <img src="../img/Tacos_emplatados.webp" alt="Tacos finalizados con sus camarones, su salsa y su pico de gallo"
+        width="500" height="250">
+    <br>
+    <h2>Formulario</h2>
+    <form>
+        <input type="text" id="nombre" placeholder="Escribe tu nombre">
+        <input type="text" id="apellidos" placeholder="Escribe apellidos">
+        <br><br>
+        <input type="email" id="email" placeholder="Example@example.com">
+        <br><br>
+        <label for="opciones">Escoge una opción</label>
+        <select id="opciones">
+            <option value="consulta">Consulta</option>
+            <option value="sugerencia">Sugerencia</option>
+            <option value="corrección">Corrección</option>
+        </select>
+        <br><br>
+        <textarea rows="10" cols="45">Escribe aqui.</textarea>
+        <br>
+        <input type="checkbox" id="privacidad">
+        <label for="privacidad">Acepte la politica de privacidad</label>
+        <br><br>
+        <button type="button" onclick="send">Enviar</button>
+        <br><br>
+    </form>
+
+</body>
+
+</html>
